@@ -115,6 +115,8 @@ const Image = () => {
           setLoading(false);
         }
       }, 200);
+    } else {
+      setShowUploadModal(true);
     }
   };
 
@@ -165,7 +167,7 @@ const Image = () => {
             onClick={() => handleSave("update")}
             disabled={loading}
           >
-            {loading ? "Saving..." : "UPDATE PROFILE"}
+            Update Picture
           </button>
         </div>
       </div>
